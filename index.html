@@ -29,7 +29,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="ri-home-5-line"></i> Home
                         </a>
                     </li>
@@ -44,7 +44,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#Services" class="nav__link">
+                        <a href="#services" class="nav__link">
                             <i class="ri-briefcase-line"></i> Services
                         </a>
                     </li>
@@ -69,7 +69,7 @@
 
             <div class="nav__buttons">
                 <!-- Theme change button -->
-                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
 
                 <!-- Toggle button -->
                 <div class="nav__toggle" id="nav-toggle">
@@ -472,25 +472,116 @@
             </div>
         </section>
 
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
-
-        </section>
-
         <!--==================== CONTACT ====================-->
         <section class="contact section" id="contact">
+            <h2 class="section__title">
+                Contact Me
+            </h2>
+            <span class="section__subtitle">Get in touch</span>
 
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-2-line"></i> Talk to me
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">yulitabenari@gmail.com</span>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Whatsapp</span>
+                            <span class="contact__data-info">054-2634686</span>
+                            <a href="https://wa.me/972542634686" target="_blank" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line"></i> Write me here
+                    </h3>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" name="user_name" required placeholder="Write your name"
+                                class="contact__form-input" id="contact-name" />
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="text" name="user_email" required placeholder="Write your mail"
+                                class="contact__form-input" id="contact-email" />
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Message</label>
+                            <textarea name="user_message" placeholder="Write your message" id="contact-message"
+                                class="contact__form-input"></textarea>
+                        </div>
+
+                        <p class="contact__error" id="contact-error"></p>
+
+                        <button type="submit" class="contact__button">
+                            Submit <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Yuli</h1>
+            <p>Frontend Developer</p>
 
+            <ul class="footer__list">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://www.linkedin.com/in/yuli-tamara-243236207/" target="_blank"
+                    class="footer__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+
+                <a href="https://github.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+
+                <a href="https://www.instagram.com/leave_yuli_alone/" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; Copyright Yuli Tamara. All rights reserved
+            </span>
+        </div>
     </footer>
 
 
     <!--========== SCROLL UP ==========-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
@@ -499,6 +590,7 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
     <!--=============== MAIN JS ===============-->

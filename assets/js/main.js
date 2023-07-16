@@ -48,13 +48,93 @@ let swiperProjects = new Swiper(".projects__container", {
   },
 });
 
-/*=============== SWIPER TESTIMONIAL ===============*/
-
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById("contact-form"),
+  contactName = document.getElementById("contact-name"),
+  contactEmail = document.getElementById("contact-email"),
+  contactMessage = document.getElementById("contact-message"),
+  contactError = document.getElementById("contact-error");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  // Check if the field has a value
+  if (
+    contactName.value === "" ||
+    contactEmail.value === "" ||
+    contactMessage.value === ""
+  ) {
+    // Add and remove color
+    contactError.classList.remove("color-blue");
+    contactError.classList.add("color-red");
+
+    // Show message
+    contactError.textContent = "Write all the input fields 📥";
+  } else {
+    // serviceID - templateID - #form - publickey
+    emailjs
+      .sendForm(
+        "service_pgmvaog",
+        "template_pkem6ld",
+        "#contact-form",
+        "nWkvqRFbu1rCg5bAq"
+      )
+      .then(
+        () => {
+          // Show message and add color
+          contactError.classList.add("color-blue");
+          contactError.textContent = "Message sent ✅";
+
+          // Remove message after five seconds
+          setTimeout(() => {
+            contactError.textContent = "";
+          }, 5000);
+        },
+        (error) => {
+          alert("OOPS! SOMETHING HAS FAILED...", error);
+        }
+      );
+
+    // To clear the input field
+    contactName.value = "";
+    contactEmail.value = "";
+    contactMessage.value = "";
+  }
+};
+contactForm.addEventListener("submit", sendEmail);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute("id"),
+      sectionClass = document.querySelector(
+        ".nav__menu a[href*=" + sectionId + "]"
+      );
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionClass.classList.add("active-link");
+    } else {
+      sectionClass.classList.remove("active-link");
+    }
+  });
+};
+window.addEventListener("scroll", scrollActive);
 
 /*=============== SHOW SCROLL UP ===============*/
+const scrollUp = () => {
+  const scrollUp = document.getElementById("scroll-up");
+  // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag
+  this.scrollY >= 350
+    ? scrollUp.classList.add("show-scroll")
+    : scrollUp.classList.remove("show-scroll");
+};
+window.addEventListener("scroll", scrollUp);
 
 /*=============== DARK LIGHT THEME ===============*/
 
