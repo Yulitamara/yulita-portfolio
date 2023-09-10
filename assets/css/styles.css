@@ -523,14 +523,12 @@ body.dark-theme {
   margin-bottom: 1.25rem;
 }
 
-.qualification__subtitle {
-  font-weight: 500;
-}
 .qualification__list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   max-width: 400px;
+  color: var(--text-color-light);
 }
 
 .qualification__country,
