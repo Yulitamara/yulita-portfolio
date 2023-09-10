@@ -116,6 +116,7 @@ img {
 body.dark-theme {
   --title-color: hsl(207, 4%, 95%);
   --text-color: hsl(207, 4%, 65%);
+  --text-color-light: hsl(286, 14%, 76%);
   --body-color: hsl(207, 4%, 10%);
   --container-color: hsl(207, 4%, 12%);
 }
@@ -402,6 +403,10 @@ body.dark-theme {
   font-weight: var(--font-semi-bold);
 }
 
+.cat-img:hover {
+  animation: bounce-skills 0.6s;
+}
+
 /*=============== SKILLS ===============*/
 .skills__container {
   row-gap: 3.5rem;
@@ -516,6 +521,16 @@ body.dark-theme {
 .qualification__name {
   font-size: var(--normal-font-size);
   margin-bottom: 1.25rem;
+}
+
+.qualification__subtitle {
+  font-weight: 500;
+}
+.qualification__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
 }
 
 .qualification__country,
@@ -971,7 +986,7 @@ body.dark-theme {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 870px) {
   .home__container {
     grid-template-columns: 1fr 2fr 1fr;
   }
