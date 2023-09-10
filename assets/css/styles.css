@@ -607,7 +607,7 @@ body.dark-theme {
 }
 
 .projects__subtitle {
-  font-size: var(--small-font-size);
+  font-size: var(--rgular-font-size);
   color: var(--text-color-light);
 }
 
@@ -621,6 +621,15 @@ body.dark-theme {
   display: inline-flex;
   align-items: center;
   column-gap: 0.5rem;
+  color: var(--title-color);
+  font-size: var(--rgular-font-size);
+  margin-bottom: 1rem;
+}
+
+.git-btn {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.2rem;
   color: var(--title-color);
   font-size: var(--small-font-size);
 }
