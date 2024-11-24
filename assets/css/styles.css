@@ -403,6 +403,9 @@ body.dark-theme {
   font-weight: var(--font-semi-bold);
 }
 
+.cat-img {
+  cursor: pointer;
+}
 .cat-img:hover {
   animation: bounce-skills 0.6s;
 }
