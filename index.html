@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/plant.png" type="image/x-icon" />
 
-  <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="assets/img/plant.png" type="image/x-icon" />
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <!--=============== REMIXICONS ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-  <!--=============== SWIPER CSS ===============-->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Yuli's Portfolio</title>
+  </head>
 
-  <title>Yuli's Portfolio</title>
-</head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Yuli Tamara</a>
 
-<body>
-  <!--==================== HEADER ====================-->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">Yuli Tamara</a>
-
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list grid">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-              <i class="ri-home-5-line"></i> Home
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="ri-trophy-line"></i> Skills
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#qualification" class="nav__link">
-              <i class="ri-book-open-line"></i> Qualification
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">
-              <i class="ri-briefcase-line"></i> Services
-            </a>
-          </li>
-          <!-- <li class="nav__item">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="ri-home-5-line"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="ri-trophy-line"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="ri-book-open-line"></i> Qualification
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="ri-briefcase-line"></i> Services
+              </a>
+            </li>
+            <!-- <li class="nav__item">
                         <a href="#projects" class="nav__link">
                             <i class="ri-image-line"></i> Projects
                         </a>
                     </li> -->
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">
-              <i class="ri-chat-3-line"></i> Contact
-            </a>
-          </li>
-        </ul>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="ri-chat-3-line"></i> Contact
+              </a>
+            </li>
+          </ul>
 
-        <!-- close button -->
-        <div class="nav__close" id="nav-close">
-          <i class="ri-close-line"></i>
+          <!-- close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
         </div>
-      </div>
 
-      <div class="nav__buttons">
-        <!-- Theme change button -->
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div class="nav__buttons">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-        <!-- Toggle button -->
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-4-line"></i>
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
   <!--==================== MAIN ====================-->
   <main class="main">
@@ -86,43 +88,61 @@
         <div class="home__data grid">
           <h1 class="home__title">
             Hi, I'm Yuli <br />
-            Front-end Developer <br />
+            Web Developer <br />
             Designer <br />
+            Illustrator <br />
+            Comic Creator
           </h1>
 
-          <div class="home__blob grid">
-            <div class="home__perfil">
-              <img src="assets/img/hero-gif.gif" alt="home perfil" />
+            <div class="home__blob grid">
+              <div class="home__perfil">
+                <img src="assets/img/hero-gif.gif" alt="home perfil" />
+              </div>
+
+              <img
+                src="assets/img/shape-wawes.svg"
+                alt=""
+                class="home__shape-wawes"
+              />
+              <img
+                src="assets/img/shape-circle.svg"
+                alt=""
+                class="home__shape-circle"
+              />
             </div>
 
-            <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes" />
-            <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle" />
-          </div>
-
-          <ul class="home__social">
-            <a href="https://www.linkedin.com/in/yuli-tamara-243236207/" target="_blank" class="home__social-link">
-              <i class="ri-linkedin-box-line"></i>
-            </a>
-            <!-- <a
+            <ul class="home__social">
+              <a
+                href="https://www.linkedin.com/in/yuli-tamara-243236207/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+              <!-- <a
                 href="https://github.com/Yulitamara"
                 target="_blank"
                 class="home__social-link"
               >
                 <i class="ri-github-line"></i>
               </a> -->
-            <a href="https://www.instagram.com/leave_yuli_alone/" target="_blank" class="home__social-link">
-              <i class="ri-instagram-line"></i>
-            </a>
-          </ul>
-        </div>
+              <a
+                href="https://www.instagram.com/leave_yuli_alone/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </ul>
+          </div>
 
         <!--==================== HOME INFO 1 ====================-->
         <div class="home__info">
           <div>
             <h3 class="home__info-title">BIOGRAPGY</h3>
             <p class="home__info-description">
-              Hi, I'm Yuli, a front-end developer. Passionate about building
-              beautiful and efficient web interfaces.
+              Hi, I'm Yuli, a web developer. Passionate about designing
+              beautiful and efficient web interfaces that work. Based in TLV.
             </p>
           </div>
           <div>
@@ -132,66 +152,78 @@
               054-2634686
             </p>
           </div>
-          <!-- <div>
+          <div>
             <h3 class="home__info-title">
               CHECK OUT MY COMICS PAGE!
             </h3>
             <a href="https://www.instagram.com/leave_yuli_alone/" target="_blank">
               <img class="cat-img" src="/assets/img/click-here-img.png" alt="" width="100" />
             </a>
-          
-          </div> -->
-        </div>
-
-        <!--==================== HOME INFO 2 ====================-->
-        <div class="home__info">
-          <div>
-            <h3 class="home__info-title">YEARS OF EXPERIENCE</h3>
-            <p class="home__info-number">04+</p>
-          </div>
-          <div>
-            <h3 class="home__info-title">COMPLETED PROJECTS</h3>
-            <p class="home__info-number">10+</p>
-          </div>
-          <div>
-            <h3 class="home__info-title">COMPANIES WORKED</h3>
-            <p class="home__info-number">02</p>
+            <!-- <p class="home__info-description cat-img">
+              CLICK HERE
+            </p> -->
           </div>
         </div>
-      </div>
-    </section>
 
-    <!--==================== SKILLS ====================-->
-    <section class="skills section" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <span class="section__subtitle">My favorite skills</span>
-
-      <div class="skills__container container grid section__border">
-        <!--==================== SKILLS 1 ====================-->
-        <div class="skills__content">
-          <h3 class="skills__title">
-            <i class="ri-braces-line"></i>
-            Web Development
-          </h3>
-
-          <div class="skills__info">
-            <div class="skills__data">
-              <div class="skills__blob">
-                <img src="assets/img/logo-javascript.svg" alt="skills image" />
-              </div>
-
-              <h3 class="skills__name">JavaScript</h3>
-              <span class="skills__subtitle">Advanced</span>
+          <!--==================== HOME INFO 2 ====================-->
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">YEARS OF EXPERIENCE</h3>
+              <p class="home__info-number">04+</p>
             </div>
-            <div class="skills__data">
-              <div class="skills__blob">
-                <img src="assets/img/react-2.svg" alt="skills image" />
+            <div>
+              <h3 class="home__info-title">COMPLETED PROJECTS</h3>
+              <p class="home__info-number">10+</p>
+            </div>
+            <div>
+              <h3 class="home__info-title">COMPANIES WORKED</h3>
+              <p class="home__info-number">02</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My favorite skills</span>
+
+        <div class="skills__container container grid section__border">
+          <!--==================== SKILLS 1 ====================-->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-braces-line"></i>
+              Web Development
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="assets/img/logo-javascript.svg"
+                    alt="skills image"
+                  />
+                </div>
+
+                <h3 class="skills__name">JavaScript</h3>
+                <span class="skills__subtitle">Advanced</span>
               </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/react-2.svg" alt="skills image" />
+                </div>
 
               <h3 class="skills__name">React</h3>
               <span class="skills__subtitle">Advanced</span>
             </div>
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="assets/img/nodejss.svg" alt="skills image" />
+              </div>
 
+              <h3 class="skills__name">Node JS</h3>
+              <span class="skills__subtitle">Advanced</span>
+            </div>
             <div class="skills__data">
               <div class="skills__blob">
                 <img src="assets/img/html-1.svg" alt="skills image" />
@@ -209,57 +241,78 @@
             </div>
             <div class="skills__data">
               <div class="skills__blob">
-                <img src="assets/img/sql-icon.png" alt="skills image" />
+                <img src="assets/img/git-icon.svg" alt="skills image" />
               </div>
 
-              <h3 class="skills__name">SQL</h3>
+              <h3 class="skills__name">Git</h3>
               <span class="skills__subtitle">Intermediate</span>
             </div>
           </div>
         </div>
 
-        <!--==================== SKILLS 2 ====================-->
-        <div class="skills__content">
-          <h3 class="skills__title">
-            <i class="ri-pantone-line"></i> Web Design
-          </h3>
+          <!--==================== SKILLS 2 ====================-->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-pantone-line"></i> Web Design
+            </h3>
 
-          <div class="skills__info">
-            <div class="skills__data">
-              <div class="skills__blob">
-                <img src="assets/img/figma-1.svg" alt="skills image" />
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/figma-1.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">Figma</h3>
+                <span class="skills__subtitle">Advanced</span>
               </div>
 
-              <h3 class="skills__name">Figma</h3>
-              <span class="skills__subtitle">Advanced</span>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="assets/img/adobe-photoshop-2.svg"
+                    alt="skills image"
+                  />
+                </div>
+
+                <h3 class="skills__name">Photoshop</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="assets/img/sketch-2.svg" alt="skills image" />
+              </div>
+
+              <h3 class="skills__name">Sketch</h3>
+              <span class="skills__subtitle">Intermediate</span>
             </div>
 
             <div class="skills__data">
               <div class="skills__blob">
-                <img src="assets/img/adobe-photoshop-2.svg" alt="skills image" />
+                <img src="assets/img/adobe-xd-1.svg" alt="skills image" />
               </div>
 
-              <h3 class="skills__name">Photoshop</h3>
-              <span class="skills__subtitle">Advanced</span>
+              <h3 class="skills__name">Adobe XD</h3>
+              <span class="skills__subtitle">Intermediate</span>
             </div>
 
             <div class="skills__data">
               <div class="skills__blob">
-                <img src="assets/img/ai-icon.png" alt="skills image" />
+                <img src="assets/img/invision.svg" alt="skills image" />
               </div>
 
-              <h3 class="skills__name">Illustrator</h3>
-              <span class="skills__subtitle">Advanced</span>
+              <h3 class="skills__name">InvisionApp</h3>
+              <span class="skills__subtitle">Intermediate</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--==================== QUALIFICATION ====================-->
-    <section class="qualification section" id="qualification">
-      <h2 class="section__title">Qualification</h2>
-      <span class="section__subtitle">Experience & education</span>
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">Experience & education</span>
 
       <div class="qualification__container container grid section__border">
         <!--==================== QUALIFICATION 1 ====================-->
@@ -270,7 +323,7 @@
           <div class="qualification__info">
             <div>
               <h3 class="qualification__name">Impact Software Systems</h3>
-              <p>Front-end developer</p>
+              <p>Head of front-end department</p>
               <br />
               <ul class="qualification__list">
                 <li class="qualification__list-item">
@@ -287,6 +340,10 @@
                   integration of new designs and features into the updating
                   infrastructure.
                 </li>
+                <li class="qualification__list-item">
+                  Constant communications with QA team, customer support team
+                  and company board for prioritizing features for each update.
+                </li>
               </ul>
               <br />
               <span class="qualification__year">2022 - Present</span>
@@ -296,127 +353,133 @@
                 10K Project - Weizmann Institute of Science
               </h3>
 
-              <ul class="qualification__list">
-                <li class="qualification__list-item">
-                  Building and designing unique newsletters monthly.
-                </li>
-                <li class="qualification__list-item">
-                  Collaborative work with content creators to align newsletter
-                  content with their preferences and requirements for each
-                  issue.
-                </li>
-              </ul>
+                <ul class="qualification__list">
+                  <li class="qualification__list-item">
+                    Building and designing unique newsletters monthly.
+                  </li>
+                  <li class="qualification__list-item">
+                    Collaborative work with content creators to align newsletter
+                    content with their preferences and requirements for each
+                    issue.
+                  </li>
+                </ul>
 
-              <span class="qualification__country"></span>
-              <span class="qualification__year">2022 - Present</span>
+                <span class="qualification__country"></span>
+                <span class="qualification__year">2022 - Present</span>
+              </div>
+              <div>
+                <h3 class="qualification__name">
+                  Professional and personal projects
+                </h3>
+                <span class="qualification__country"
+                  >Constantly working on personal projects for fun and to
+                  improve my skills.</span
+                >
+                <span class="qualification__year"></span>
+              </div>
             </div>
-            <div>
-              <h3 class="qualification__name">
-                Professional and personal projects
-              </h3>
-              <span class="qualification__country">Constantly working on personal projects for fun and to
-                improve my skills.</span>
-              <span class="qualification__year"></span>
+          </div>
+          <!--==================== QUALIFICATION 2 ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-pencil-ruler-2-line"></i> Education
+            </h3>
+
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">SheCodes</h3>
+                <span class="qualification__country">Online Courses</span>
+                <span class="qualification__year">2019</span>
+              </div>
+              <div>
+                <h3 class="qualification__name">Udemy</h3>
+                <span class="qualification__country">Online Courses:</span>
+                <p class="qualification__country">
+                  React - The Complete Guide 2023 (incl. React Router & Redux)
+                  <br />
+                  <br />
+                  Build Web Apps with React & Firebase
+                  <br />
+                  <br />
+                  The Modern Flexbox, Grid, Sass &
+                  <br />
+                  Animations Developer Course
+                  <br />
+                  <br />
+                  The Complete JavaScript Course 2023:
+                  <br />
+                  From Zero to Expert!
+                </p>
+                <span class="qualification__year">2020 - always learning</span>
+              </div>
             </div>
           </div>
         </div>
-        <!--==================== QUALIFICATION 2 ====================-->
-        <div class="qualification__content">
-          <h3 class="qualification__title">
-            <i class="ri-pencil-ruler-2-line"></i> Education
-          </h3>
+        <img
+          src="assets/img/shape-circle.svg"
+          alt="qualification image"
+          class="qualification__img"
+        />
+      </section>
 
-          <div class="qualification__info">
-            <div>
-              <h3 class="qualification__name">SheCodes</h3>
-              <span class="qualification__country">Online Courses</span>
-              <span class="qualification__year">2019</span>
-            </div>
-            <div>
-              <h3 class="qualification__name">Udemy</h3>
-              <span class="qualification__country">Online Courses:</span>
-              <p class="qualification__country">
-                React - The Complete Guide 2023 (incl. React Router & Redux)
-                <br />
-                <br />
-                Build Web Apps with React & Firebase
-                <br />
-                <br />
-                The Modern Flexbox, Grid, Sass &
-                <br />
-                Animations Developer Course
-                <br />
-                <br />
-                The Complete JavaScript Course 2023:
-                <br />
-                From Zero to Expert!
-              </p>
-              <span class="qualification__year">2020 - always learning</span>
-            </div>
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I offer</span>
+
+        <div class="services__container container grid section__border">
+          <div class="services__card">
+            <i class="ri-layout-4-line"></i>
+
+            <h2 class="services__title">
+              UI/UX <br />
+              Designer
+            </h2>
+
+            <p class="services__description">
+              Experience working with customers and adjusting the design upon
+              request.
+            </p>
+
+            <div class="services__border"></div>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-code-line"></i>
+
+            <h2 class="services__title">
+              Web <br />
+              Development
+            </h2>
+
+            <p class="services__description">
+              Experience with different programming languages and work
+              environments.
+            </p>
+
+            <div class="services__border"></div>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-quill-pen-line"></i>
+
+            <h2 class="services__title">
+              Digital <br />
+              Illustrations
+            </h2>
+
+            <p class="services__description">
+              Animations and illustrations full of life that will upgrade your
+              website.
+            </p>
+
+            <div class="services__border"></div>
           </div>
         </div>
-      </div>
-      <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img" />
-    </section>
+      </section>
 
-    <!--==================== SERVICES ====================-->
-    <section class="services section" id="services">
-      <h2 class="section__title">Services</h2>
-      <span class="section__subtitle">What I offer</span>
-
-      <div class="services__container container grid section__border">
-        <div class="services__card">
-          <i class="ri-layout-4-line"></i>
-
-          <h2 class="services__title">
-            UI/UX <br />
-            Designer
-          </h2>
-
-          <p class="services__description">
-            Experience working with customers and adjusting the design upon
-            request.
-          </p>
-
-          <div class="services__border"></div>
-        </div>
-
-        <div class="services__card">
-          <i class="ri-code-line"></i>
-
-          <h2 class="services__title">
-            Web <br />
-            Development
-          </h2>
-
-          <p class="services__description">
-            Experience with different programming languages and work
-            environments.
-          </p>
-
-          <div class="services__border"></div>
-        </div>
-
-        <div class="services__card">
-          <i class="ri-quill-pen-line"></i>
-
-          <h2 class="services__title">
-            Digital <br />
-            Illustrations
-          </h2>
-
-          <p class="services__description">
-            Animations and illustrations full of life that will upgrade your
-            website.
-          </p>
-
-          <div class="services__border"></div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== PROJECTS ====================-->
-    <!-- <section class="projects section" id="projects">
+      <!--==================== PROJECTS ====================-->
+      <!-- <section class="projects section" id="projects">
             <h2 class="section__title">Projects</h2>
             <span class="section__subtitle">More of my work</span>
 
@@ -512,124 +575,154 @@
             </div>
         </section> -->
 
-    <!--==================== CONTACT ====================-->
-    <section class="contact section" id="contact">
-      <h2 class="section__title">Contact Me</h2>
-      <span class="section__subtitle">Get in touch</span>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
 
-      <div class="contact__container container grid section__border">
-        <div class="contact__content">
-          <h3 class="contact__title">
-            <i class="ri-chat-2-line"></i> Talk to me
-          </h3>
+        <div class="contact__container container grid section__border">
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-chat-2-line"></i> Talk to me
+            </h3>
 
-          <div class="contact__info">
-            <div class="contact__data">
-              <span class="contact__data-title">Email</span>
-              <span class="contact__data-info">yulitabenari@gmail.com</span>
-            </div>
+            <div class="contact__info">
+              <div class="contact__data">
+                <span class="contact__data-title">Email</span>
+                <span class="contact__data-info">yulitabenari@gmail.com</span>
+              </div>
 
-            <div class="contact__data">
-              <span class="contact__data-title">Whatsapp</span>
-              <span class="contact__data-info">054-2634686</span>
-              <a href="https://wa.me/972542634686" target="_blank" class="contact__button">
-                Write me <i class="ri-arrow-right-line"></i>
-              </a>
+              <div class="contact__data">
+                <span class="contact__data-title">Whatsapp</span>
+                <span class="contact__data-info">054-2634686</span>
+                <a
+                  href="https://wa.me/972542634686"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
             </div>
           </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-send-plane-line"></i> Write me here
+            </h3>
+
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Write your name"
+                  class="contact__form-input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Mail</label>
+                <input
+                  type="text"
+                  name="user_email"
+                  required
+                  placeholder="Write your mail"
+                  class="contact__form-input"
+                  id="contact-email"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Message</label>
+                <textarea
+                  name="message"
+                  placeholder="Write your message"
+                  id="contact-message"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+
+              <p class="contact__error" id="contact-error"></p>
+
+              <button type="submit" class="contact__button">
+                Submit <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </form>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <div class="contact__content">
-          <h3 class="contact__title">
-            <i class="ri-send-plane-line"></i> Write me here
-          </h3>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Yuli</h1>
+        <p>Frontend Developer</p>
 
-          <form action="" class="contact__form" id="contact-form">
-            <div class="contact__form-div">
-              <label class="contact__form-tag">Name</label>
-              <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input"
-                id="contact-name" />
-            </div>
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
 
-            <div class="contact__form-div">
-              <label class="contact__form-tag">Mail</label>
-              <input type="text" name="user_email" required placeholder="Write your mail" class="contact__form-input"
-                id="contact-email" />
-            </div>
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
 
-            <div class="contact__form-div contact__form-area">
-              <label class="contact__form-tag">Message</label>
-              <textarea name="message" placeholder="Write your message" id="contact-message"
-                class="contact__form-input"></textarea>
-            </div>
+          <li>
+            <a href="#qualification" class="footer__link">Qualification</a>
+          </li>
+        </ul>
 
-            <p class="contact__error" id="contact-error"></p>
-
-            <button type="submit" class="contact__button">
-              Submit <i class="ri-arrow-right-up-line"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!--==================== FOOTER ====================-->
-  <footer class="footer">
-    <div class="footer__container container">
-      <h1 class="footer__title">Yuli</h1>
-      <p>Frontend Developer</p>
-
-      <ul class="footer__list">
-        <li>
-          <a href="#home" class="footer__link">Home</a>
-        </li>
-
-        <li>
-          <a href="#skills" class="footer__link">Skills</a>
-        </li>
-
-        <li>
-          <a href="#qualification" class="footer__link">Qualification</a>
-        </li>
-      </ul>
-
-      <ul class="footer__social">
-        <a href="https://www.linkedin.com/in/yuli-tamara-243236207/" target="_blank" class="footer__social-link">
-          <i class="ri-linkedin-box-line"></i>
-        </a>
-        <!-- 
+        <ul class="footer__social">
+          <a
+            href="https://www.linkedin.com/in/yuli-tamara-243236207/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <!-- 
                 <a href="https://github.com/Yulitamara" target="_blank" class="footer__social-link">
                     <i class="ri-github-line"></i>
                 </a> -->
 
-        <a href="https://www.instagram.com/leave_yuli_alone/" target="_blank" class="footer__social-link">
-          <i class="ri-instagram-line"></i>
-        </a>
-      </ul>
+          <a
+            href="https://www.instagram.com/leave_yuli_alone/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-instagram-line"></i>
+          </a>
+        </ul>
 
-      <span class="footer__copy">
-        &#169; Copyright Yuli Tamara. All rights reserved
-      </span>
-    </div>
-  </footer>
+        <span class="footer__copy">
+          &#169; Copyright Yuli Tamara. All rights reserved
+        </span>
+      </div>
+    </footer>
 
-  <!--========== SCROLL UP ==========-->
-  <a href="#" class="scrollup" id="scroll-up">
-    <i class="ri-arrow-up-line"></i>
-  </a>
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
 
-  <!--=============== SCROLLREVEAL ===============-->
-  <script src="assets/js/scrollreveal.min.js"></script>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
-  <!--=============== SWIPER JS ===============-->
-  <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-  <!--=============== EMAIL JS ===============-->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
-  <!--=============== MAIN JS ===============-->
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
