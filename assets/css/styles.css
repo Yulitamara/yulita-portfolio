@@ -132,7 +132,7 @@ body.dark-theme {
   box-shadow: 0 4px 20px hsla(207, 24%, 8%, 0.4);
 }
 
-.dark-theme .home__shape-waves,
+.dark-theme .home__shape-wawes,
 .dark-theme .home__shape-circle,
 .dark-theme .qualification__img {
   filter: invert(1);
@@ -339,13 +339,13 @@ body.dark-theme {
   width: 200px;
 }
 
-.home__shape-waves,
+.home__shape-wawes,
 .home__shape-circle {
   position: absolute;
   opacity: 0.1;
 }
 
-.home__shape-waves {
+.home__shape-wawes {
   width: 50px;
   left: -1.5rem;
   top: 5rem;
@@ -1134,7 +1134,7 @@ body.dark-theme {
   .home__perfil img {
     width: 440px;
   }
-  .home__shape-waves {
+  .home__shape-wawes {
     width: 100px;
     left: -4rem;
     top: 10rem;
