@@ -29,24 +29,26 @@ const linkAction = () => {
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*=============== SWIPER PROJECTS ===============*/
-let swiperProjects = new Swiper(".projects__container", {
-  loop: true,
-  spaceBetween: 24,
+if (document.querySelector(".projects__container")) {
+  let swiperProjects = new Swiper(".projects__container", {
+    loop: true,
+    spaceBetween: 24,
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  breakpoints: {
-    1200: {
-      slidesPerView: 2,
-      spaceBetween: -56,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-  },
-});
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: -56,
+      },
+    },
+  });
+}
 
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById("contact-form"),
@@ -82,26 +84,32 @@ const sendEmail = (e) => {
       .then(
         () => {
           // Show message and add color
+          contactError.classList.remove("color-red");
           contactError.classList.add("color-blue");
           contactError.textContent = "Message sent ✅";
+
+          // Clear the input fields after a successful submission
+          contactName.value = "";
+          contactEmail.value = "";
+          contactMessage.value = "";
 
           // Remove message after five seconds
           setTimeout(() => {
             contactError.textContent = "";
           }, 5000);
         },
-        (error) => {
-          alert("OOPS! SOMETHING HAS FAILED...", error);
+        () => {
+          contactError.classList.remove("color-blue");
+          contactError.classList.add("color-red");
+          contactError.textContent =
+            "Something went wrong. Please try again in a moment.";
         }
       );
-
-    // To clear the input field
-    contactName.value = "";
-    contactEmail.value = "";
-    contactMessage.value = "";
   }
 };
-contactForm.addEventListener("submit", sendEmail);
+if (contactForm) {
+  contactForm.addEventListener("submit", sendEmail);
+}
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll("section[id]");
@@ -184,18 +192,18 @@ window.addEventListener("scroll", scrollHeader);
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
   origin: "top",
-  distance: "60px",
-  duration: 2500,
-  delay: 400,
+  distance: "36px",
+  duration: 1000,
+  delay: 120,
   // reset: true /* Animation repeat */,
 });
 
 sr.reveal(`.home__data, .projects__container, .footer__container`);
-sr.reveal(`.home__info div`, { delay: 600, origin: "bottom", interval: 100 });
+sr.reveal(`.home__info div`, { delay: 180, origin: "bottom", interval: 80 });
 sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`, {
   origin: "left",
 });
 sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {
   origin: "right",
 });
-sr.reveal(`.qualification__content, .services__card`, { interval: 100 });
+sr.reveal(`.qualification__content, .services__card`, { interval: 80 });
