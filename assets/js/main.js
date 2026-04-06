@@ -18,6 +18,21 @@ if (navClose) {
     navMenu.classList.remove("show-menu");
   });
 }
+
+document.addEventListener("click", (event) => {
+  if (!navMenu || !navToggle) return;
+
+  const clickedInsideMenu = navMenu.contains(event.target);
+  const clickedToggle = navToggle.contains(event.target);
+
+  if (
+    navMenu.classList.contains("show-menu") &&
+    !clickedInsideMenu &&
+    !clickedToggle
+  ) {
+    navMenu.classList.remove("show-menu");
+  }
+});
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll(".nav__link");
 
