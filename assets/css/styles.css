@@ -811,6 +811,16 @@ body.dark-theme {
   background: none;
   outline: none;
   z-index: 1;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact__form-input:focus {
+  border-color: var(--title-color);
+}
+
+.contact__form-input-error {
+  border-color: hsl(4, 71%, 50%);
+  box-shadow: 0 0 0 4px hsla(4, 71%, 50%, 0.08);
 }
 
 .contact__form-tag {
@@ -843,6 +853,7 @@ body.dark-theme {
   cursor: pointer;
   outline: none;
   margin-top: 0.75rem;
+  transition: opacity 0.3s;
 }
 
 .contact__form .contact__button i {
@@ -850,11 +861,29 @@ body.dark-theme {
   font-weight: initial;
 }
 
+.contact__form .contact__button-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact__form .contact__button-disabled i {
+  animation: button-spin 0.8s linear infinite;
+}
+
 .contact__error {
   font-size: var(--small-font-size);
   position: absolute;
   bottom: 2.8rem;
   left: 1.5rem;
+}
+
+@keyframes button-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* Status color */
 .color-red {

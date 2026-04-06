@@ -55,60 +55,145 @@ const contactForm = document.getElementById("contact-form"),
   contactName = document.getElementById("contact-name"),
   contactEmail = document.getElementById("contact-email"),
   contactMessage = document.getElementById("contact-message"),
-  contactError = document.getElementById("contact-error");
+  contactError = document.getElementById("contact-error"),
+  contactSubmit = document.getElementById("contact-submit");
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const setFormStatus = (message, status) => {
+  contactError.classList.remove("color-red", "color-blue");
+  contactError.classList.add(status === "error" ? "color-red" : "color-blue");
+  contactError.textContent = message;
+};
+
+const clearFieldError = (field) => {
+  field.classList.remove("contact__form-input-error");
+  field.setCustomValidity("");
+};
+
+const setFieldError = (field, message) => {
+  field.classList.add("contact__form-input-error");
+  field.setCustomValidity(message);
+};
+
+const validateForm = () => {
+  const nameValue = contactName.value.trim();
+  const emailValue = contactEmail.value.trim();
+  const messageValue = contactMessage.value.trim();
+
+  clearFieldError(contactName);
+  clearFieldError(contactEmail);
+  clearFieldError(contactMessage);
+
+  if (!nameValue) {
+    setFieldError(contactName, "Please enter your name.");
+    setFormStatus("Please add your name.", "error");
+    contactName.reportValidity();
+    return false;
+  }
+
+  if (!emailValue) {
+    setFieldError(contactEmail, "Please enter your email address.");
+    setFormStatus("Please add your email address.", "error");
+    contactEmail.reportValidity();
+    return false;
+  }
+
+  if (!emailPattern.test(emailValue)) {
+    setFieldError(contactEmail, "Please enter a valid email address.");
+    setFormStatus("Please check your email address.", "error");
+    contactEmail.reportValidity();
+    return false;
+  }
+
+  if (!messageValue) {
+    setFieldError(contactMessage, "Please write a short message.");
+    setFormStatus("Please write a short message.", "error");
+    contactMessage.reportValidity();
+    return false;
+  }
+
+  if (messageValue.length < 10) {
+    setFieldError(
+      contactMessage,
+      "Your message should be at least 10 characters long."
+    );
+    setFormStatus(
+      "Your message is a little too short. Please add a bit more detail.",
+      "error"
+    );
+    contactMessage.reportValidity();
+    return false;
+  }
+
+  contactName.value = nameValue;
+  contactEmail.value = emailValue;
+  contactMessage.value = messageValue;
+  contactError.textContent = "";
+  contactError.classList.remove("color-red", "color-blue");
+
+  return true;
+};
+
+const toggleSubmitState = (isSending) => {
+  if (!contactSubmit) return;
+
+  contactSubmit.disabled = isSending;
+  contactSubmit.classList.toggle("contact__button-disabled", isSending);
+  contactSubmit.innerHTML = isSending
+    ? 'Sending... <i class="ri-loader-4-line"></i>'
+    : 'Submit <i class="ri-arrow-right-up-line"></i>';
+};
 
 const sendEmail = (e) => {
   e.preventDefault();
 
-  // Check if the field has a value
-  if (
-    contactName.value === "" ||
-    contactEmail.value === "" ||
-    contactMessage.value === ""
-  ) {
-    // Add and remove color
-    contactError.classList.remove("color-blue");
-    contactError.classList.add("color-red");
+  if (!validateForm()) return;
 
-    // Show message
-    contactError.textContent = "Write all the input fields 📥";
-  } else {
-    // serviceID - templateID - #form - publickey
-    emailjs
-      .sendForm(
-        "service_pgmvaog",
-        "template_pkem6ld",
-        "#contact-form",
-        "nWkvqRFbu1rCg5bAq"
-      )
-      .then(
-        () => {
-          // Show message and add color
-          contactError.classList.remove("color-red");
-          contactError.classList.add("color-blue");
-          contactError.textContent = "Message sent ✅";
+  toggleSubmitState(true);
 
-          // Clear the input fields after a successful submission
-          contactName.value = "";
-          contactEmail.value = "";
-          contactMessage.value = "";
+  // serviceID - templateID - #form - publickey
+  emailjs
+    .sendForm(
+      "service_pgmvaog",
+      "template_pkem6ld",
+      "#contact-form",
+      "nWkvqRFbu1rCg5bAq"
+    )
+    .then(
+      () => {
+        setFormStatus("Thanks, your message was sent successfully.", "success");
+        contactForm.reset();
 
-          // Remove message after five seconds
-          setTimeout(() => {
-            contactError.textContent = "";
-          }, 5000);
-        },
-        () => {
-          contactError.classList.remove("color-blue");
-          contactError.classList.add("color-red");
-          contactError.textContent =
-            "Something went wrong. Please try again in a moment.";
-        }
-      );
-  }
+        // Remove message after five seconds
+        setTimeout(() => {
+          contactError.textContent = "";
+        }, 5000);
+      },
+      () => {
+        setFormStatus(
+          "Something went wrong while sending your message. Please try again in a moment.",
+          "error"
+        );
+      }
+    )
+    .finally(() => {
+      toggleSubmitState(false);
+    });
 };
 if (contactForm) {
   contactForm.addEventListener("submit", sendEmail);
+
+  [contactName, contactEmail, contactMessage].forEach((field) => {
+    field.addEventListener("input", () => {
+      clearFieldError(field);
+
+      if (contactError.classList.contains("color-red")) {
+        contactError.textContent = "";
+        contactError.classList.remove("color-red");
+      }
+    });
+  });
 }
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
