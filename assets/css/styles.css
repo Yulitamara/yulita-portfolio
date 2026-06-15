@@ -814,45 +814,12 @@ body.dark-theme {
   background: var(--title-color);
 }
 
-.projects__button {
-  width: max-content;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 0.5rem;
-  align-self: end;
-  min-height: 2.5rem;
-  margin-top: 0.25rem;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--title-color);
-  border-radius: 999px;
-  background: var(--title-color);
-  font-family: var(--title-font);
-  font-size: var(--small-font-size);
-  color: var(--body-color);
-  cursor: pointer;
-  transition: transform 0.3s, opacity 0.3s, background 0.3s, color 0.3s;
-}
-
 .git-btn {
   display: inline-flex;
   align-items: center;
   column-gap: 0.2rem;
   color: var(--title-color);
   font-size: var(--small-font-size);
-}
-
-.projects__button i {
-  font-size: 1rem;
-  transition: transform 0.3s;
-}
-
-.projects__button:hover {
-  transform: translateY(-0.12rem);
-}
-
-.projects__button:hover i {
-  transform: translateX(0.25rem);
 }
 
 /*=============== CONTACT ===============*/
