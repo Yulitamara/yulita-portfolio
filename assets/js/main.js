@@ -70,29 +70,6 @@ if (document.querySelector(".projects__container.swiper")) {
   });
 }
 
-/*=============== SWIPER COMICS ===============*/
-if (document.querySelector(".comics__slider.swiper")) {
-  let swiperComics = new Swiper(".comics__slider.swiper", {
-    loop: true,
-    spaceBetween: 24,
-    slidesPerView: 1,
-    centeredSlides: true,
-    autoplay: {
-      delay: 4500,
-      disableOnInteraction: false,
-    },
-
-    navigation: {
-      nextEl: ".comics__next",
-      prevEl: ".comics__prev",
-    },
-    pagination: {
-      el: ".comics__pagination",
-      clickable: true,
-    },
-  });
-}
-
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll("section[id]");
 
@@ -182,12 +159,12 @@ const sr = ScrollReveal({
   // reset: true /* Animation repeat */,
 });
 
-sr.reveal(`.home__data, .projects__container, .comics__container, .footer__container`);
-sr.reveal(`.home__info div`, { delay: 180, origin: "bottom", interval: 80 });
-sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`, {
+sr.reveal(`.home__data, .projects__container, .about__container, .footer__container`);
+sr.reveal(`.home__visual`, { delay: 180, origin: "bottom" });
+sr.reveal(`.skills__content:nth-child(1), .contact__content`, {
   origin: "left",
 });
-sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {
+sr.reveal(`.skills__content:nth-child(2)`, {
   origin: "right",
 });
-sr.reveal(`.qualification__content, .services__card`, { interval: 80 });
+sr.reveal(`.skills__content:nth-child(3), .services__card`, { interval: 80 });

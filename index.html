@@ -19,7 +19,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Yuli Tamara | Creative Web Developer & Experience Designer</title>
+    <title>Yuli Tamara | Web Designer & Front-End Developer</title>
   </head>
 
   <body>
@@ -32,27 +32,38 @@
           <ul class="nav__list grid">
             <li class="nav__item">
               <a href="#home" class="nav__link active-link">
-                <i class="ri-home-5-line"></i> Home
+                <i class="ri-home-5-line"></i>
+                <span>Home</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#projects" class="nav__link">
-                <i class="ri-gallery-line"></i> Work
+                <i class="ri-gallery-line"></i>
+                <span>Work</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="ri-user-3-line"></i>
+                <span>About</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#skills" class="nav__link">
-                <i class="ri-trophy-line"></i> Skills
+                <i class="ri-trophy-line"></i>
+                <span>Skills</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#services" class="nav__link">
-                <i class="ri-briefcase-line"></i> Services
+                <i class="ri-briefcase-line"></i>
+                <span>Services</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="ri-chat-3-line"></i> Contact
+                <i class="ri-chat-3-line"></i>
+                <span>Contact</span>
               </a>
             </li>
           </ul>
@@ -81,466 +92,34 @@
       <section class="home section" id="home">
         <div class="home__container container grid section__border">
           <div class="home__data grid">
+            <span class="home__eyebrow">Web Design / UI/UX / Front-End</span>
             <h1 class="home__title">
               <span class="home__name">Yuli Tamara</span>
-              <span class="home__role">
-                Creative Web Developer & Experience Designer
-              </span>
+              <span class="home__role">Web Designer & Front-End Developer</span>
             </h1>
             <p class="home__intro">
-              I design and build expressive websites, digital experiences, and
-              visual systems for brands, creators, and content-led projects.
+              I design and build clean, responsive websites, landing pages, and
+              digital interfaces for brands, creators, and companies.
             </p>
+            <ul class="home__tags">
+              <li>UI/UX</li>
+              <li>Front-End</li>
+              <li>Visual Design</li>
+              <li>Illustration</li>
+            </ul>
             <div class="home__actions">
-              <a href="#projects" class="home__button">View work</a>
+              <a href="#projects" class="home__button">View Work</a>
               <a href="#contact" class="home__button home__button-ghost">
-                Start a project
+                Contact Me
               </a>
             </div>
-
-            <div class="home__blob grid">
-              <div class="home__perfil">
-                <img
-                  src="assets/img/hero-gif.gif"
-                  alt="Yuli portrait animation"
-                />
-              </div>
-
-              <img
-                src="assets/img/shape-wawes.svg"
-                alt=""
-                class="home__shape-wawes"
-              />
-              <img
-                src="assets/img/shape-circle.svg"
-                alt=""
-                class="home__shape-circle"
-              />
-            </div>
-
-            <ul class="home__social">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/yuli-tamara-243236207/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn profile"
-                  class="home__social-link"
-                >
-                  <i class="ri-linkedin-box-line"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/leave_yuli_alone/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram content profile"
-                  class="home__social-link"
-                >
-                  <i class="ri-instagram-line"></i>
-                </a>
-              </li>
-            </ul>
-            <p class="home__social-note">
-              Illustration and visual storytelling with a 14K+ Instagram
-              audience.
-            </p>
-            <ul class="home__stats">
-              <li>
-                <span>14K+</span>
-                <p>Creative audience</p>
-              </li>
-              <li>
-                <span>4+</span>
-                <p>Years of design work</p>
-              </li>
-              <li>
-                <span>Web</span>
-                <p>Design & frontend</p>
-              </li>
-            </ul>
           </div>
 
-          <!--==================== HOME INFO 1 ====================-->
-          <div class="home__info">
-            <div>
-              <h3 class="home__info-title">FOCUS</h3>
-              <p class="home__info-description">
-                Websites for brands and creators, frontend implementation,
-                UI/UX, graphic design, illustration, and visual storytelling.
-              </p>
-            </div>
-          </div>
-
-          <!--==================== HOME INFO 2 ====================-->
-          <div class="home__info">
-            <div>
-              <h3 class="home__info-title">CONTACT</h3>
-              <p class="home__info-description">
-                TLV <br />
-                yulitabenari@gmail.com <br />
-                +972-542634686
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== COMICS ====================-->
-      <section class="comics section" id="comics">
-        <h2 class="section__title">Comics & Visual Stories</h2>
-        <span class="section__subtitle">
-          Illustration-led storytelling from my creator platform
-        </span>
-
-        <div class="comics__container container section__border">
-          <div class="comics__slider swiper">
-            <div class="swiper-wrapper">
-              <article class="comics__card swiper-slide">
-                <img
-                  src="assets/img/protfolio-comics-1.webp"
-                  alt="Illustrated comic from Yuli Tamara's Instagram"
-                  class="comics__img"
-                />
-              </article>
-
-              <article class="comics__card swiper-slide">
-                <img
-                  src="assets/img/protfolio-comics-2.webp"
-                  alt="Illustrated comic from Yuli Tamara's Instagram"
-                  class="comics__img"
-                />
-              </article>
-
-              <article class="comics__card swiper-slide">
-                <img
-                  src="assets/img/protfolio-comics-3.webp"
-                  alt="Illustrated comic from Yuli Tamara's Instagram"
-                  class="comics__img"
-                />
-              </article>
-
-              <article class="comics__card swiper-slide">
-                <img
-                  src="assets/img/protfolio-comics-4.webp"
-                  alt="Illustrated comic from Yuli Tamara's Instagram"
-                  class="comics__img"
-                />
-              </article>
-
-              <article class="comics__card swiper-slide">
-                <img
-                  src="assets/img/protfolio-comics-5.webp"
-                  alt="Illustrated comic from Yuli Tamara's Instagram"
-                  class="comics__img"
-                />
-              </article>
-            </div>
-
-            <div class="comics__next swiper-button-next">
-              <i class="ri-arrow-right-s-line"></i>
-            </div>
-            <div class="comics__prev swiper-button-prev">
-              <i class="ri-arrow-left-s-line"></i>
-            </div>
-          </div>
-
-          <div class="comics__pagination swiper-pagination"></div>
-
-          <a
-            href="https://www.instagram.com/leave_yuli_alone/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="comics__button"
-          >
-            More on Instagram <i class="ri-instagram-line"></i>
-          </a>
-        </div>
-      </section>
-
-      <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">
-          A mix of web, product, brand, and illustration skills
-          <br />
-          for digital experiences with a strong visual voice.
-        </span>
-
-        <div class="skills__container container grid section__border">
-          <!--==================== SKILLS 1 ====================-->
-          <div class="skills__content">
-            <h3 class="skills__title">
-              <i class="ri-pencil-ruler-2-line"></i>
-              Design
-            </h3>
-
-            <div class="skills__info">
-              <div class="skills__data">
-                <span class="skills__name">Web Design</span>
-              </div>
-              <div class="skills__data">
-                <span class="skills__name">UI/UX</span>
-              </div>
-              <div class="skills__data">
-                <span class="skills__name">Branding</span>
-              </div>
-              <div class="skills__data">
-                <span class="skills__name">Illustration</span>
-              </div>
-              <div class="skills__data">
-                <span class="skills__name">Layout & Typography</span>
-              </div>
-              <div class="skills__data">
-                <span class="skills__name">Visual Storytelling</span>
-              </div>
-            </div>
-          </div>
-
-          <!--==================== SKILLS 2 ====================-->
-          <div class="skills__content">
-            <h3 class="skills__title">
-              <i class="ri-pantone-line"></i> Tools & Frontend
-            </h3>
-
-            <div class="skills__info">
-              <div class="skills__data">
-                <span class="skills__name">Figma</span>
-              </div>
-
-              <div class="skills__data">
-                <span class="skills__name">Photoshop</span>
-              </div>
-
-              <div class="skills__data">
-                <span class="skills__name">Illustrator</span>
-              </div>
-              <div class="skills__data">
-                <span class="skills__name">AI Tools</span>
-              </div>
-              <div class="skills__data">
-                <span class="skills__name">HTML / CSS / JS</span>
-              </div>
-              <div class="skills__data">
-                <span class="skills__name">React</span>
-              </div>
-              <div class="skills__data">
-                <span class="skills__name">Responsive Layouts</span>
-              </div>
-            </div>
-          </div>
-          <!--==================== SKILLS 3 ====================-->
-          <div class="skills__content">
-            <h3 class="skills__title">
-              <i class="ri-translate-2"></i> Languages
-            </h3>
-
-            <div class="skills__info">
-              <div class="skills__data">
-                <span class="skills__name">Hebrew</span>
-                <span class="skills__subtitle">Native</span>
-              </div>
-
-              <div class="skills__data">
-                <span class="skills__name">English</span>
-                <span class="skills__subtitle">Fluent</span>
-              </div>
-
-              <div class="skills__data">
-                <span class="skills__name">German</span>
-                <span class="skills__subtitle">B1</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section" id="qualification">
-        <h2 class="section__title">Experience Highlights</h2>
-        <span class="section__subtitle"
-          >Selected work across web, product, editorial, and content</span
-        >
-
-        <div class="qualification__container container grid section__border">
-          <!--==================== QUALIFICATION 1 ====================-->
-          <div class="qualification__content">
-            <h3 class="qualification__title">
-              <i class="ri-building-line"></i> Professional Experience
-            </h3>
-            <div class="qualification__info">
-              <div>
-                <h3 class="qualification__name">Impact Software Systems</h3>
-                <p>UI/UX & Visual Designer</p>
-                <br />
-                <ul class="qualification__list">
-                  <li class="qualification__list-item">
-                    Led the visual redesign of a complex CRM platform.
-                  </li>
-                  <li class="qualification__list-item">
-                    Designed interface layouts, UI patterns, and user flows.
-                  </li>
-                  <li class="qualification__list-item">
-                    Turned dense product information into clearer visual
-                    structures.
-                  </li>
-                  <li class="qualification__list-item">
-                    Collaborated with product teams on experience direction.
-                  </li>
-                </ul>
-
-                <br />
-                <span class="qualification__year">2022 - 2026</span>
-              </div>
-              <div>
-                <h3 class="qualification__name">
-                  10K Project - Weizmann Institute of Science
-                </h3>
-                <p>Visual Designer & Frontend Developer</p>
-                <br />
-
-                <ul class="qualification__list">
-                  <li class="qualification__list-item">
-                    Designed and built editorial-style newsletters and digital
-                    content.
-                  </li>
-                  <li class="qualification__list-item">
-                    Translated scientific information into clear visual
-                    communication.
-                  </li>
-                  <li class="qualification__list-item">
-                    Focused on hierarchy, readability, and responsive structure.
-                  </li>
-                  <li class="qualification__list-item">
-                    Maintained visual consistency across recurring publications.
-                  </li>
-                </ul>
-
-                <span class="qualification__country"></span>
-                <span class="qualification__year">2022 - Present</span>
-              </div>
-              <div>
-                <h3 class="qualification__name">
-                  Freelance Web & Brand Designer
-                </h3>
-                <ul class="qualification__list">
-                  <li class="qualification__list-item">
-                    Designed websites, brand visuals, and campaign assets for
-                    clients.
-                  </li>
-                  <li class="qualification__list-item">
-                    Created digital-first visuals across social and web
-                    platforms.
-                  </li>
-                  <li class="qualification__list-item">
-                    Developed visual concepts from strategy to final assets.
-                  </li>
-                  <li class="qualification__list-item">
-                    Built ongoing client relationships through clear creative
-                    direction.
-                  </li>
-                </ul>
-                <span class="qualification__year"></span>
-              </div>
-            </div>
-          </div>
-          <!--==================== QUALIFICATION 2 ====================-->
-          <div class="qualification__content">
-            <h3 class="qualification__title">
-              <i class="ri-pencil-ruler-2-line"></i> Creator Platform
-            </h3>
-
-            <div class="qualification__info">
-              <div>
-                <h3 class="qualification__name">
-                  Illustrator & Visual Storyteller
-                </h3>
-                <span class="qualification__country">
-                  Self-initiated platform | 14K+ followers
-                </span>
-                <br />
-                <br />
-                <ul class="qualification__list">
-                  <li class="qualification__list-item">
-                    Built an engaged illustration and storytelling audience of
-                    14K+ followers.
-                  </li>
-                  <li class="qualification__list-item">
-                    Created character-led content shaped by audience response.
-                  </li>
-                  <li class="qualification__list-item">
-                    Developed a recognizable illustration style and tone.
-                  </li>
-                  <li class="qualification__list-item">
-                    Generated paid collaborations and creator-led opportunities.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="assets/img/shape-circle.svg"
-          alt="qualification image"
-          class="qualification__img"
-        />
-      </section>
-
-      <!--==================== SERVICES ====================-->
-      <section class="services section" id="services">
-        <h2 class="section__title">Services</h2>
-        <span class="section__subtitle">
-          Focused creative and technical support for digital projects
-        </span>
-
-        <div class="services__container container grid section__border">
-          <div class="services__card">
-            <i class="ri-layout-4-line"></i>
-
-            <h2 class="services__title">
-              Web <br />
-              Design
-            </h2>
-
-            <p class="services__description">
-              Designing responsive websites with clear structure, strong visual
-              direction, and user-friendly flows.
-            </p>
-
-            <div class="services__border"></div>
-          </div>
-
-          <div class="services__card">
-            <i class="ri-code-s-slash-line"></i>
-
-            <h2 class="services__title">
-              Front-End <br />
-              Development
-            </h2>
-
-            <p class="services__description">
-              Building polished pages with HTML, CSS, JavaScript, responsive
-              layouts, and clean interaction details.
-            </p>
-
-            <div class="services__border"></div>
-          </div>
-
-          <div class="services__card">
-            <i class="ri-palette-line"></i>
-
-            <h2 class="services__title">
-              Brand & <br />
-              Content
-            </h2>
-
-            <p class="services__description">
-              Creating brand visuals, campaign assets, illustrations, and
-              content systems for digital audiences.
-            </p>
-
-            <div class="services__border"></div>
+          <div class="home__visual">
+            <img
+              src="assets/img/hero-gif.gif"
+              alt="Yuli Tamara working on a laptop illustration"
+            />
           </div>
         </div>
       </section>
@@ -549,28 +128,35 @@
       <section class="projects section" id="projects">
         <h2 class="section__title">Selected Work</h2>
         <span class="section__subtitle">
-          Web, product, editorial, and illustration projects
+          Web, product, e-commerce, and visual content projects
         </span>
 
         <div class="projects__container container grid section__border">
           <article class="projects__card">
-            <div class="projects__icon">
-              <i class="ri-store-2-line"></i>
+            <div class="projects__media">
+              <img
+                src="assets/img/art-shop-website.png"
+                alt="Art shop website project preview"
+                class="projects__image"
+              />
             </div>
 
             <div class="projects__data">
-              <span class="projects__subtitle">E-commerce Design</span>
+              <span class="projects__subtitle">
+                E-commerce / Web Design / Front-End
+              </span>
               <h3 class="projects__title">Art Shop Website</h3>
               <p class="projects__description">
-                A live art shop website designed and built for browsing
-                artwork, discovering collections, and purchasing prints.
+                Designed and built an online shop for art prints and custom
+                illustrated products, focusing on a clean shopping experience,
+                visual storytelling, and responsive design.
               </p>
 
               <ul class="projects__list">
-                <li>Gallery-style product browsing</li>
-                <li>Artist-focused visual system</li>
-                <li>Responsive storefront experience</li>
-                <li>Clear product discovery and purchase flow</li>
+                <li>Website design</li>
+                <li>Product browsing and filtering</li>
+                <li>Cart and checkout flow</li>
+                <li>Visual direction for art-based products</li>
               </ul>
             </div>
 
@@ -585,23 +171,28 @@
           </article>
 
           <article class="projects__card">
-            <div class="projects__icon">
-              <i class="ri-layout-4-line"></i>
+            <div class="projects__media">
+              <img
+                src="assets/img/crm-platform-design.png"
+                alt="CRM platform design project preview"
+                class="projects__image"
+              />
             </div>
 
             <div class="projects__data">
-              <span class="projects__subtitle">Product Design</span>
+              <span class="projects__subtitle">UI/UX / Product Design</span>
               <h3 class="projects__title">CRM Platform Design</h3>
               <p class="projects__description">
-                A complex CRM redesign focused on visual hierarchy, usability,
-                and clearer product workflows.
+                Designed interface improvements and user flows for a CRM
+                platform, focusing on clarity, usability, and a more modern
+                product experience.
               </p>
 
               <ul class="projects__list">
-                <li>UI/UX structure and user flows</li>
-                <li>Dashboard and data hierarchy</li>
-                <li>Reusable layout patterns</li>
-                <li>Collaboration with product teams</li>
+                <li>UI/UX design</li>
+                <li>Product screens</li>
+                <li>User flow improvements</li>
+                <li>Design for complex data and workflows</li>
               </ul>
             </div>
 
@@ -616,23 +207,58 @@
           </article>
 
           <article class="projects__card">
-            <div class="projects__icon">
-              <i class="ri-newspaper-line"></i>
+            <div class="projects__media projects__media--pending">
+              <span>Newsletter sample image coming soon</span>
             </div>
 
             <div class="projects__data">
-              <span class="projects__subtitle">Editorial Design</span>
-              <h3 class="projects__title">Weizmann Institute Newsletters</h3>
+              <span class="projects__subtitle">
+                Newsletter Design / Visual Communication
+              </span>
+              <h3 class="projects__title">
+                Weizmann Institute of Science Newsletters
+              </h3>
               <p class="projects__description">
-                Editorial newsletter design and frontend work for scientific
-                communication and recurring digital publications.
+                Designed recurring newsletters for scientific and research-based
+                content, focusing on hierarchy, readability, responsive layout,
+                and brand consistency.
               </p>
 
               <ul class="projects__list">
-                <li>Newsletter layout systems</li>
-                <li>Readable information hierarchy</li>
-                <li>Digital content design</li>
-                <li>Consistent brand presentation</li>
+                <li>Newsletter design</li>
+                <li>Responsive layouts</li>
+                <li>Content hierarchy</li>
+                <li>Visual storytelling for research content</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__media">
+              <img
+                src="assets/img/FB_IMG_1714733457741.jpg"
+                alt="Vegan Friendly illustration project preview"
+                class="projects__image projects__image--contain"
+              />
+            </div>
+
+            <div class="projects__data">
+              <span class="projects__subtitle">
+                Visual Content / Social Media / Brand Design
+              </span>
+              <h3 class="projects__title">
+                Illustration & Brand Collaborations
+              </h3>
+              <p class="projects__description">
+                Created illustration-led content, custom visuals, and brand
+                collaborations for an engaged online audience of 14K+ followers.
+              </p>
+
+              <ul class="projects__list">
+                <li>Custom illustrations</li>
+                <li>Brand collaborations</li>
+                <li>Social media visuals</li>
+                <li>Visual storytelling</li>
               </ul>
             </div>
 
@@ -645,79 +271,286 @@
               View Project <i class="ri-arrow-right-line"></i>
             </a>
           </article>
+        </div>
+      </section>
 
-          <article class="projects__card">
-            <div class="projects__icon">
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid section__border">
+          <div>
+            <h2 class="section__title about__title">About / Experience</h2>
+            <span class="section__subtitle about__subtitle">
+              Web design, front-end implementation, and visual systems
+            </span>
+          </div>
+
+          <div class="about__content">
+            <p class="about__text">
+              I’m a web designer and front-end developer with experience
+              creating websites, landing pages, digital products, and visual
+              systems. My background combines UI/UX, front-end implementation,
+              and illustration, which helps me create digital experiences that
+              feel both functional and visually distinctive.
+            </p>
+            <p class="about__text">
+              I’ve worked on CRM interfaces, freelance websites, landing pages,
+              e-commerce experiences, scientific digital content, and visual
+              content for brands and creators.
+            </p>
+            <p class="about__note">
+              I also create illustration-led content and brand visuals for a
+              14K+ audience.
+            </p>
+
+            <ul class="about__highlights">
+              <li>
+                <strong>Impact Software Systems</strong>
+                <span>UI/UX & Front-End work on CRM platforms</span>
+              </li>
+              <li>
+                <strong>Freelance Projects</strong>
+                <span>
+                  Websites, landing pages, brand visuals, and illustration
+                  collaborations
+                </span>
+              </li>
+              <li>
+                <strong>Weizmann Institute Of Science / 10K Project</strong>
+                <span>
+                  Visual design and responsive layouts for scientific digital
+                  content
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about__comics" aria-label="Illustration snapshots">
+            <div class="about__comics-header">
+              <h3>Illustration snapshots</h3>
+              <a
+                href="https://www.instagram.com/leave_yuli_alone/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="about__comics-link"
+              >
+                More illustration work <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+
+            <div class="about__comics-track">
+              <img
+                src="assets/img/protfolio-comics-1.webp"
+                alt="Illustration-led comic by Yuli Tamara"
+              />
+              <img
+                src="assets/img/protfolio-comics-2.webp"
+                alt="Illustration-led comic by Yuli Tamara"
+              />
+              <img
+                src="assets/img/protfolio-comics-3.webp"
+                alt="Illustration-led comic by Yuli Tamara"
+              />
+              <img
+                src="assets/img/protfolio-comics-4.webp"
+                alt="Illustration-led comic by Yuli Tamara"
+              />
+              <img
+                src="assets/img/protfolio-comics-5.webp"
+                alt="Illustration-led comic by Yuli Tamara"
+              />
+              <img
+                src="assets/img/protfolio-comics-6.webp"
+                alt="Illustration-led comic by Yuli Tamara"
+              />
+              <img
+                src="assets/img/protfolio-comics-7.webp"
+                alt="Illustration-led comic by Yuli Tamara"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">
+          Focused skills for designing and building digital experiences
+        </span>
+
+        <div class="skills__container container grid section__border">
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-pencil-ruler-2-line"></i>
+              Design
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <span class="skills__name">Figma</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">UI/UX Design</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">Web Design</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">Typography</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">Branding</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">Visual Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-code-s-slash-line"></i>
+              Development
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <span class="skills__name">HTML</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">CSS</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">JavaScript</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">React</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">Responsive Design</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">Front-End Implementation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title">
               <i class="ri-palette-line"></i>
+              Visual Content
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <span class="skills__name">Illustration</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">Photoshop</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">Illustrator</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">Social Media Design</span>
+              </div>
+              <div class="skills__data">
+                <span class="skills__name">AI-assisted Creative Tools</span>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="projects__data">
-              <span class="projects__subtitle">Brand Collaborations</span>
-              <h3 class="projects__title">Illustration & Brand Collaborations</h3>
-              <p class="projects__description">
-                Illustration-led concepts, campaign assets, and branded content
-                created for collaborations and social platforms.
-              </p>
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">What I Can Help With</h2>
+        <span class="section__subtitle">
+          Client-focused design and front-end support for polished digital work
+        </span>
 
-              <ul class="projects__list">
-                <li>Illustration and campaign concepts</li>
-                <li>Social-first brand assets</li>
-                <li>Visual storytelling systems</li>
-                <li>Creator-led collaboration work</li>
-              </ul>
-            </div>
+        <div class="services__container container grid section__border">
+          <div class="services__card">
+            <i class="ri-window-line"></i>
+            <h2 class="services__title">Portfolio & Business Websites</h2>
+            <p class="services__description">
+              Clean, responsive websites for freelancers, creators, small
+              businesses, and brands.
+            </p>
+          </div>
 
-          </article>
+          <div class="services__card">
+            <i class="ri-rocket-line"></i>
+            <h2 class="services__title">Landing Pages</h2>
+            <p class="services__description">
+              Focused landing pages for campaigns, services, products, and
+              launches.
+            </p>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-layout-4-line"></i>
+            <h2 class="services__title">UI/UX Design</h2>
+            <p class="services__description">
+              Interface design, product screens, user flows, and visual
+              improvements for digital products.
+            </p>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-shopping-bag-3-line"></i>
+            <h2 class="services__title">E-commerce & Product Pages</h2>
+            <p class="services__description">
+              Online shop experiences, product pages, browsing flows, and visual
+              direction for digital stores.
+            </p>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-brush-line"></i>
+            <h2 class="services__title">Visual Content & Illustration</h2>
+            <p class="services__description">
+              Custom illustrations, branded visuals, and social media content
+              for brands and creators.
+            </p>
+          </div>
         </div>
       </section>
 
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <span class="section__subtitle">
-          For websites, collaborations, and creative projects
-        </span>
-
         <div class="contact__container container grid section__border">
           <div class="contact__content">
-            <h3 class="contact__title">
-              <i class="ri-chat-2-line"></i> Let's work together
-            </h3>
+            <span class="section__subtitle contact__eyebrow">
+              Available for freelance web design, UI/UX, landing pages,
+              e-commerce pages, and visual content projects.
+            </span>
+            <h2 class="section__title contact__headline">
+              Let’s build something polished, visual, and easy to use.
+            </h2>
 
-            <div class="contact__info">
-              <div class="contact__data">
-                <span class="contact__data-title">Email</span>
-                <span class="contact__data-info">yulitabenari@gmail.com</span>
-              </div>
-
-              <div class="contact__data">
-                <span class="contact__data-title">Instagram</span>
-                <span class="contact__data-info">@leave_yuli_alone</span>
-                <a
-                  href="https://www.instagram.com/leave_yuli_alone/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__button"
-                >
-                  View profile <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-
-              <div class="contact__data">
-                <span class="contact__data-title">Whatsapp</span>
-                <span class="contact__data-info">+972-542634686</span>
-                <a
-                  href="https://wa.me/972542634686"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact__button"
-                >
-                  Write me <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
+            <div class="contact__actions">
+              <a href="mailto:yulitabenari@gmail.com" class="contact__button">
+                Send Me an Email <i class="ri-mail-send-line"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/leave_yuli_alone/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact__button"
+              >
+                View Instagram <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yuli-tamara-243236207/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact__button"
+              >
+                LinkedIn <i class="ri-linkedin-box-line"></i>
+              </a>
             </div>
           </div>
-
         </div>
       </section>
     </main>
@@ -726,7 +559,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <h1 class="footer__title">Yuli</h1>
-        <p>Creative Web Developer & Experience Designer</p>
+        <p>Web Designer & Front-End Developer</p>
 
         <ul class="footer__list">
           <li>
@@ -735,6 +568,10 @@
 
           <li>
             <a href="#projects" class="footer__link">Work</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer__link">About</a>
           </li>
 
           <li>
@@ -767,7 +604,7 @@
         </ul>
 
         <span class="footer__copy">
-          &#169; Copyright Yuli Tamara. All rights reserved
+          <span>&#169; Copyright Yuli Tamara. All rights reserved</span>
         </span>
       </div>
     </footer>
