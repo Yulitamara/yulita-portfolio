@@ -2342,6 +2342,16 @@ html[dir="rtl"] .contact__button i {
   .home__role {
     justify-self: start;
   }
+
+  .skills__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills__container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media screen and (max-width: 869px) {
