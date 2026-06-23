@@ -2266,8 +2266,155 @@ html[dir="rtl"] .contact__button i {
   }
 }
 
+/*=============== HERO BALANCE ===============*/
+.home__container {
+  min-height: auto;
+  align-items: center;
+  row-gap: 2.25rem;
+}
+
+.home__data {
+  max-width: 680px;
+  row-gap: 1.05rem;
+}
+
+.home__eyebrow {
+  letter-spacing: 0.04em;
+}
+
+.home__title {
+  row-gap: 0.8rem;
+  margin-bottom: 0;
+}
+
+.home__name {
+  font-size: clamp(3.2rem, 8vw, 4.75rem);
+  line-height: 0.95;
+}
+
+.home__role {
+  max-width: 620px;
+  font-size: clamp(1.55rem, 3.2vw, 2.45rem);
+  line-height: 1.15;
+  color: var(--text-color);
+}
+
+.home__intro {
+  max-width: 600px;
+  justify-self: start;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.home__tags {
+  max-width: 620px;
+}
+
+.home__actions {
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+}
+
+.home__visual {
+  width: min(100%, 330px);
+  padding: 1rem;
+  border-radius: 1.15rem;
+  background: color-mix(in srgb, var(--container-color) 84%, white);
+}
+
+.home__visual img {
+  max-width: 260px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 870px) {
+  .home__container {
+    grid-template-columns: minmax(0, 1.08fr) minmax(250px, 0.72fr);
+    column-gap: clamp(2.5rem, 6vw, 5rem);
+    padding-top: 6.5rem;
+  }
+
+  .home__visual {
+    justify-self: end;
+  }
+
+  .home__role {
+    justify-self: start;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .home__data,
+  .home__title,
+  .home__intro {
+    text-align: center;
+  }
+
+  .home__data {
+    justify-items: center;
+    margin-inline: auto;
+  }
+
+  .home__tags,
+  .home__actions {
+    justify-content: center;
+  }
+}
+
 .contact__container {
   grid-template-columns: 1fr;
+}
+
+/*=============== COMICS + HERO VISUAL REFINEMENT ===============*/
+.home__visual {
+  width: min(100%, 250px);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.home__visual img {
+  max-width: 220px;
+}
+
+.about__comics {
+  gap: 1.15rem;
+}
+
+.about__comics-track {
+  grid-auto-columns: minmax(260px, 78vw);
+  gap: 1rem;
+  padding: 0.25rem 0 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.about__comics-track img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  padding: 0.35rem;
+}
+
+@media screen and (min-width: 576px) {
+  .about__comics-track {
+    grid-auto-columns: clamp(285px, 48vw, 340px);
+  }
+}
+
+@media screen and (min-width: 870px) {
+  .home__visual {
+    width: min(100%, 270px);
+  }
+
+  .home__visual img {
+    max-width: 240px;
+  }
+
+  .about__comics-track {
+    grid-auto-columns: clamp(300px, 30vw, 360px);
+  }
 }
 
 .contact__content {
