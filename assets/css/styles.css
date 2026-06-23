@@ -2544,6 +2544,23 @@ html[dir="rtl"] .contact__button i {
   filter: invert(1) brightness(1.65) contrast(0.9);
 }
 
+.dark-theme .section__border {
+  border-bottom-color: hsla(212, 44%, 86%, 0.16);
+}
+
+.dark-theme .nav__link:hover,
+.dark-theme .nav__link.active-link {
+  border-color: #b9d1e7;
+  background: #b9d1e7;
+  color: #071a33;
+}
+
+.dark-theme .nav__close {
+  border-color: hsla(212, 44%, 86%, 0.22);
+  background: #183455;
+  color: #eef5ff;
+}
+
 .illustrations__container {
   display: grid;
   gap: 1.5rem;
@@ -2551,7 +2568,7 @@ html[dir="rtl"] .contact__button i {
 
 @media screen and (min-width: 1023px) {
   .dark-theme .nav {
-    background: transparent;
+    background: color-mix(in srgb, var(--body-color) 88%, #183455);
   }
 
   .dark-theme .nav__menu {
