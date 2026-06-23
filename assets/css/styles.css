@@ -6,17 +6,17 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --first-color: #d99086;
-  --title-color: #8f4659;
-  --text-color: #6d5357;
-  --text-color-light: #9b7e82;
-  --body-color: #fffdf8;
-  --container-color: #fff6eb;
-  --accent-mint: #b8d8cf;
-  --accent-yellow: #f5d889;
-  --accent-coral: #eaa092;
-  --accent-sky: #a9c7d8;
-  --accent-rose: #e6b4be;
+  --first-color: #1f4f86;
+  --title-color: #13366b;
+  --text-color: #29415f;
+  --text-color-light: #6b7890;
+  --body-color: #fbf7ef;
+  --container-color: #fffaf2;
+  --accent-mint: #d9e8ee;
+  --accent-yellow: #f3e8c5;
+  --accent-coral: #d8e4f1;
+  --accent-sky: #b9d1e7;
+  --accent-rose: #ead8cf;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -111,11 +111,11 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --title-color: #f7dfd4;
-  --text-color: #d8beb7;
-  --text-color-light: #b89a98;
-  --body-color: #26141a;
-  --container-color: #321d24;
+  --title-color: #eef5ff;
+  --text-color: #c6d4e8;
+  --text-color-light: #93a6c1;
+  --body-color: #071a33;
+  --container-color: #0d2442;
 }
 
 /*========== 
@@ -1953,6 +1953,16 @@ html[dir="rtl"] .contact__button i {
   gap: 1rem;
 }
 
+.about__cv-visual {
+  width: min(100%, 260px);
+  margin-top: 1.5rem;
+}
+
+.about__cv-visual img {
+  display: block;
+  width: 100%;
+}
+
 .about__text,
 .about__note {
   line-height: 1.8;
@@ -2189,6 +2199,13 @@ html[dir="rtl"] .contact__button i {
   background: hsla(22, 30%, 92%, 0.05);
 }
 
+.dark-theme .about__cv-visual {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
 .dark-theme .about__comics img {
   border-color: hsla(22, 30%, 92%, 0.1);
   background: hsla(22, 30%, 92%, 0.04);
@@ -2350,7 +2367,7 @@ html[dir="rtl"] .contact__button i {
 
 @media screen and (min-width: 1200px) {
   .skills__container {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -2429,4 +2446,110 @@ html[dir="rtl"] .contact__button i {
 
 .contact__content {
   justify-self: center;
+}
+
+/*=============== CV-INSPIRED COLOR REFINEMENT ===============*/
+.section__border,
+.projects__card,
+.projects__media,
+.skills__content,
+.skills__name,
+.services__card,
+.about__highlights li,
+.about__comics-track img,
+.about__comics-link {
+  border-color: rgba(19, 54, 107, 0.13);
+}
+
+.header,
+.nav {
+  background: color-mix(in srgb, var(--body-color) 92%, white);
+}
+
+.nav__logo,
+.nav__link,
+.change-theme {
+  color: var(--title-color);
+}
+
+.home__button,
+.contact__button {
+  background: var(--title-color);
+  border-color: var(--title-color);
+  color: var(--body-color);
+}
+
+.home__button-ghost,
+.contact__button:nth-child(2) {
+  background: color-mix(in srgb, var(--accent-mint) 62%, white);
+  color: var(--title-color);
+}
+
+.contact__button:nth-child(3),
+.projects__button {
+  background: color-mix(in srgb, var(--accent-yellow) 58%, white);
+  color: var(--title-color);
+}
+
+.projects__list,
+.projects__description,
+.services__description {
+  color: var(--text-color);
+}
+
+.about__note {
+  background: color-mix(in srgb, var(--accent-yellow) 38%, white);
+  border-left-color: var(--title-color);
+}
+
+.scrollup {
+  background: var(--title-color);
+  color: var(--body-color);
+}
+
+.dark-theme .home__button,
+.dark-theme .contact__button,
+.dark-theme .projects__button {
+  border-color: #b9d1e7;
+  background: #b9d1e7;
+  color: #071a33;
+}
+
+.dark-theme .home__button-ghost,
+.dark-theme .contact__button:nth-child(2),
+.dark-theme .contact__button:nth-child(3) {
+  background: transparent;
+  color: #eef5ff;
+}
+
+/*=============== DARK MODE POLISH ===============*/
+.header,
+.dark-theme .header {
+  background: transparent;
+}
+
+.dark-theme .nav,
+.dark-theme .nav__menu {
+  background: var(--body-color);
+}
+
+.dark-theme .scrollup {
+  border: 1px solid hsla(212, 44%, 86%, 0.22);
+  background: #b9d1e7;
+  color: #071a33;
+  box-shadow: 0 8px 24px hsla(212, 70%, 4%, 0.35);
+}
+
+.dark-theme .about__cv-visual img {
+  filter: invert(1) brightness(1.65) contrast(0.9);
+}
+
+@media screen and (min-width: 1023px) {
+  .dark-theme .nav {
+    background: transparent;
+  }
+
+  .dark-theme .nav__menu {
+    background: transparent;
+  }
 }
