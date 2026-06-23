@@ -144,19 +144,19 @@ body.dark-theme {
 }
 
 .dark-theme .home__intro {
-  color: #d8beb7;
+  color: var(--text-color);
 }
 
 .dark-theme .home__button {
-  border-color: #f0b2a8;
-  background: #f0b2a8;
-  color: #26141a;
+  border-color: #b9d1e7;
+  background: #b9d1e7;
+  color: #071a33;
 }
 
 .dark-theme .home__button-ghost {
   border-color: #b8d8cf;
   background: transparent;
-  color: #f7dfd4;
+  color: #eef5ff;
 }
 
 .dark-theme .section__border {
@@ -186,9 +186,9 @@ body.dark-theme {
 
 .dark-theme .projects__button,
 .dark-theme .comics__button {
-  border-color: #f0b2a8;
-  background: #8f4659;
-  color: #fff8ed;
+  border-color: #b9d1e7;
+  background: #b9d1e7;
+  color: #071a33;
 }
 
 .dark-theme .comics__card {
@@ -207,11 +207,11 @@ body.dark-theme {
 }
 
 .dark-theme::-webkit-scrollbar-thumb {
-  background-color: #5f3442;
+  background-color: #496985;
 }
 
 .dark-theme::-webkit-scrollbar-thumb:hover {
-  background-color: #8f4659;
+  background-color: #b9d1e7;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -1731,7 +1731,7 @@ html[dir="rtl"] .contact__button i {
   .dark-theme .nav,
   .dark-theme .nav__menu {
     border-color: hsla(22, 30%, 92%, 0.12);
-    background: color-mix(in srgb, var(--container-color) 88%, #26141a);
+    background: color-mix(in srgb, var(--container-color) 88%, #071a33);
   }
 
   .dark-theme .nav__link {
@@ -1742,13 +1742,13 @@ html[dir="rtl"] .contact__button i {
 
   .dark-theme .nav__link:hover,
   .dark-theme .nav__link.active-link {
-    background: #f0b2a8;
-    color: #26141a;
+    background: #b9d1e7;
+    color: #071a33;
   }
 
   .dark-theme .nav__close {
     border-color: hsla(22, 30%, 92%, 0.12);
-    background: #26141a;
+    background: #183455;
   }
 }
 
@@ -2212,15 +2212,15 @@ html[dir="rtl"] .contact__button i {
 }
 
 .dark-theme .contact__button {
-  border-color: #f0b2a8;
-  background: #f0b2a8;
-  color: #26141a;
+  border-color: #b9d1e7;
+  background: #b9d1e7;
+  color: #071a33;
 }
 
 .dark-theme .contact__button:nth-child(2),
 .dark-theme .contact__button:nth-child(3) {
   background: transparent;
-  color: #f7dfd4;
+  color: #eef5ff;
 }
 
 @media screen and (min-width: 870px) {
@@ -2581,6 +2581,16 @@ html[dir="rtl"] .contact__button i {
     padding-block: 4.75rem 0;
   }
 
+  .section__title,
+  .section__subtitle {
+    width: min(100% - 3rem, 32rem);
+    margin-inline: auto;
+  }
+
+  .section__subtitle {
+    line-height: 1.75;
+  }
+
   .section__border {
     padding-bottom: 5.5rem;
   }
@@ -2622,4 +2632,18 @@ html[dir="rtl"] .contact__button i {
   .contact__actions {
     gap: 0.95rem;
   }
+}
+
+/*=============== HERO GIF COLOR TUNING ===============*/
+.home__visual img {
+  filter: saturate(1.18) brightness(0.9) contrast(1.14);
+}
+
+.dark-theme .home__visual img {
+  filter: saturate(0.9) brightness(0.76) contrast(1.08);
+  opacity: 0.82;
+}
+
+.dark-theme .home__visual {
+  background: transparent;
 }
