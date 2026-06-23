@@ -2544,6 +2544,11 @@ html[dir="rtl"] .contact__button i {
   filter: invert(1) brightness(1.65) contrast(0.9);
 }
 
+.illustrations__container {
+  display: grid;
+  gap: 1.5rem;
+}
+
 @media screen and (min-width: 1023px) {
   .dark-theme .nav {
     background: transparent;
@@ -2551,5 +2556,53 @@ html[dir="rtl"] .contact__button i {
 
   .dark-theme .nav__menu {
     background: transparent;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-block: 4.75rem 0;
+  }
+
+  .section__border {
+    padding-bottom: 5.5rem;
+  }
+
+  .home__container {
+    row-gap: 3.25rem;
+    padding-top: 2.75rem;
+  }
+
+  .home__data {
+    row-gap: 1.2rem;
+  }
+
+  .home__tags {
+    gap: 0.7rem;
+  }
+
+  .projects__container,
+  .about__container,
+  .skills__container,
+  .services__container {
+    row-gap: 1.35rem;
+  }
+
+  .projects__card,
+  .skills__content,
+  .services__card {
+    padding: 1.25rem;
+  }
+
+  .about__comics {
+    gap: 1.35rem;
+  }
+
+  .about__comics-track {
+    padding-bottom: 1.35rem;
+  }
+
+  .contact__actions {
+    gap: 0.95rem;
   }
 }
